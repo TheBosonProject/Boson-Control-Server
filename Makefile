@@ -15,4 +15,4 @@ SRC_FILES = main.cpp
 
 build:  $(SRC_FILES)
 	mkdir -p $(TARGET_DIR)
-	g++  $(SRC_FILES) -I $(BOOST_ROOT) -I $(HDR_DIR) -o $()$(TARGET_DIR)$(TARGET)
+	g++  -std=c++11 -Wall $(SRC_FILES) -I $(BOOST_ROOT) -I $(HDR_DIR) -o $()$(TARGET_DIR)$(TARGET)
