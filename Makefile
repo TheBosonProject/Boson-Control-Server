@@ -15,19 +15,19 @@ all: clean build
 
 ver: 
 	@go version
-clean:
+clean: ver
 	@echo "removing build directory.."
 	rm -rf out/
 	@echo "build directoy removed"
 
-build: $(SRC_DIR)
+build: ver $(SRC_DIR)
 	@echo "creating build directory.."
 	@mkdir -p $(OUT_DIR)
 	@eho "building binary.."
 	@go build -o $(OUT_DIR)$(TARGET)
 	@echo "build command complete"
 
-test:
+test: ver
 	@echo "Starting go tests.."
 	go test $(SRC_DIR)
 	@echo "tests completed."
