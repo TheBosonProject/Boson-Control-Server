@@ -1,18 +1,33 @@
+
+#macros
+
+#binary out put dir
+OUT_DIR = out/
+
+#target of the application
+TARGET = boson-control-server.exe
+
+#directories containing the source files.
+SRC_DIR = handlers/ logger/ 
+
+
 all: clean build
 
-
+ver: 
+	@go version
 clean:
-	rm -rf out
+	@echo "removing build directory.."
+	rm -rf out/
+	@echo "build directoy removed"
 
+build: $(SRC_DIR)
+	@echo "creating build directory.."
+	@mkdir -p $(OUT_DIR)
+	@eho "building binary.."
+	@go build -o $(OUT_DIR)$(TARGET)
+	@echo "build command complete"
 
-HDR_DIR = include/
-SRC_DIR = src/
-
-TARGET_DIR = out/
-TARGET = boson.exe
-
-SRC_FILES = main.cpp
-
-build:  $(SRC_FILES)
-	mkdir -p $(TARGET_DIR)
-	g++  -std=c++11 -Wall $(SRC_FILES) -I $(BOOST_ROOT) -I $(HDR_DIR) -o $()$(TARGET_DIR)$(TARGET)
+test:
+	@echo "Starting go tests.."
+	go test $(SRC_DIR)
+	@echo "tests completed."
