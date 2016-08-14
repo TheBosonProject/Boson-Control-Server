@@ -1,5 +1,10 @@
-# Boson
+# Boson-Control-Server
 
-__Desktop share and unify software__
+__HTTP Server for TheBosonProject__
 
-Application used to share desktop and composite a desktop from others
+## __Purpose__
+  * Provide Auth to the Boson system.
+  * Provide User Registration/Deregistration. 
+  * Provide session initiation for the clients(TBD).
+  * Client app managent.
+
