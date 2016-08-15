@@ -1,0 +1,17 @@
+language: go
+
+go:
+    - 1.6
+
+#install glide
+before_install: ./ci_scripts/pre_install.sh 
+#dependencies
+install: $GOPATH/bin/glide install
+
+#run default make command
+script:make
+
+#safelist branches to be built
+branches:
+    only:
+    - master
