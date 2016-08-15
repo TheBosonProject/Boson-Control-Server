@@ -8,7 +8,7 @@ OUT_DIR = out/
 TARGET = boson-control-server.exe
 
 #directories containing the source files.
-SRC_DIR = handlers/ logger/ 
+ 
 
 #Default make command.
 all: clean get-deps build
