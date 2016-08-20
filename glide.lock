@@ -1,8 +1,8 @@
-hash: cacc45b21c87050d65c882c873a8b6aad0dd79be9e29baca106bd31a72383b54
-updated: 2016-08-20T20:59:15.70259751+05:30
+hash: 7618be60470a6de4df5ba291bbfea018a627073a3135e02a599e56daeba56a15
+updated: 2016-08-20T21:30:42.110183502+05:30
 imports:
 - name: github.com/koushik-shetty/kgologger
-  version: 1cf90c1018b4363c7e20d2846d71a8fccedb359b
+  version: c297e6122c197f57983f3443610c28d45219ad12
 - name: github.com/Sirupsen/logrus
   version: 4b6ea7319e214d98c938f12692336f7ca9348d6b
 - name: github.com/stretchr/testify

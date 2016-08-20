@@ -7,4 +7,4 @@ import:
 - package: github.com/Sirupsen/logrus
   version: ^0.10.0
 - package: github.com/koushik-shetty/kgologger
-  version: ^0.1.1
+  version: ^0.1.2
