@@ -1,6 +1,16 @@
-hash: 30b10f4e734b463bc43c1c515d5a2a8698b0e4727e2bc31231b531146e837266
-updated: 2016-08-14T23:17:04.289586964+05:30
+hash: cacc45b21c87050d65c882c873a8b6aad0dd79be9e29baca106bd31a72383b54
+updated: 2016-08-20T20:59:15.70259751+05:30
 imports:
+- name: github.com/koushik-shetty/kgologger
+  version: 1cf90c1018b4363c7e20d2846d71a8fccedb359b
+- name: github.com/Sirupsen/logrus
+  version: 4b6ea7319e214d98c938f12692336f7ca9348d6b
 - name: github.com/stretchr/testify
   version: f390dcf405f7b83c997eac1b06768bb9f44dec18
+  subpackages:
+  - assert
+- name: golang.org/x/sys
+  version: a646d33e2ee3172a661fc09bca23bb4889a41bc8
+  subpackages:
+  - unix
 testImports: []

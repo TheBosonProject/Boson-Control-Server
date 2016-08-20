@@ -9,6 +9,7 @@ TARGET = boson-control-server.exe
 
 #directories containing the source files.
  
+ SRC_DIR = ./app
 
 #Default make command.
 all: clean get-deps build
